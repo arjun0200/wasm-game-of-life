@@ -67,6 +67,20 @@ impl  Universe {
 
                     // otherwise cell remains in the same state as before
                     (otherwise, _) => otherwise,
+
+
+                    // if cell == Cell::Alive && live_neighbors < 2 {
+                    //     Cell::Dead
+                    // } else if cell == Cell::Alive && (live_neighbors == 2 || live_neighbors == 3) {
+                    //     Cell::Alive
+                    // } else if cell == Cell::Alive && live_neighbors > 3 {
+                    //     Cell::Dead
+                    // } else if cell == Cell::Dead && live_neighbors == 3 {
+                    //     Cell::Alive
+                    // } else {
+                    //     cell // no change
+                    // }
+
                 };
                 next[idx] = next_cell;
             }

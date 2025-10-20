@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["arjun0200 <arjunverma9717@gmail.com>"]
 edition = "2018"
 
+[[bin]]
+name = "debug_game_of_life"
+path = "src/main.rs"
+
 [lib]
 crate-type = ["cdylib", "rlib"]
 
